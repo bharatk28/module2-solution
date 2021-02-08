@@ -1,9 +1,29 @@
-
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: white;
+  font-family: 'Pangolin', cursive;
+}
 header{
   font-size: 2.5em;
   text-align: center;
   padding: 15px;
   margin: 5px;
+}
+section{
+  float: left;
+  background-color: grey;
+  border: 3px solid black;
+}
+h1{
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  float: right;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
 }
 p{
   font-size: larger;
@@ -12,36 +32,33 @@ p{
 .row{
   width: 100%;
 }
-section{
-  float: left;
-  background-color: grey;
-  border: 3px solid black;
+/* Setting specific background colour for each heading */
+
+#chicken{
+  background-color: pink;
 }
 
-#chickenH1{
-  background-color:cyan;
+#beef{
+  background-color: red;
+  color: white;
 }
 
-#beefH1{
-  background-color:greenyellow;
-}
-
-#sushiH1{
-  background-color: palevioletred;
+#sushi{
+  background-color: yellow;
 }
 /* Media Queries for different screen resolutions  */
 
 /* Mobile view resolution */
 @media (max-width: 767px){
-  .chicken, .beef , .sushi{
-    width: 90%;
-    margin: 5%;
+  .chickenAndBeef , .sushi{
+    width: 92%;
+    margin: 4%;
   }
 }
 
 /* Tablet view resolution */
 @media (min-width: 768px) and (max-width: 991px){
-  .chicken,.beef{
+  .chickenAndBeef{
     width: 45%;
     margin: 2.5%;
   }
@@ -54,7 +71,7 @@ section{
 
 /* Desktop view resolution */
 @media (min-width: 992px){
-  .chicken,.beef ,.sushi{
+  section{
     width: 30%;
     margin: 1.66%;
   }
